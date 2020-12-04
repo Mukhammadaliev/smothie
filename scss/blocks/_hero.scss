@@ -1,0 +1,36 @@
+.hero {
+  padding: 135px 0;
+  text-align: center;
+  background-image: url("../img/hero__bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__title {
+  font-size: 50px;
+  line-height: 62px;
+  color: #fff;
+}
+.hero__text {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+
+
+@include breakpoint-down (568) {
+  .hero {
+    background-size: cover;
+  }
+  .hero__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .hero__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
