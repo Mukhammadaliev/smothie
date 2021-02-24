@@ -43,7 +43,8 @@
 
 @include breakpoint-down (768) {
   .navbar__list {
-    display: none;
+    position: absolute;
+    transform: translate(500%, 0%);
   }
   .menu-burger {
     display: block;
@@ -62,7 +63,9 @@
 
   .header--open .navbar__list {
     display: flex;
+    transform: translate(0, 0);
     position: absolute;
+    transition: transform 0.3s ease;
     top: 100%;
     flex-direction: column;
     align-items: flex-start;

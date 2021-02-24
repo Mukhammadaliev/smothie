@@ -1,9 +1,10 @@
 .hero {
   padding: 135px 0;
   text-align: center;
-  background-image: url("../img/hero__bg.png");
+  background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-image 0.5s ease;
 }
 
 .hero__title {
